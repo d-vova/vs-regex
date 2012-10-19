@@ -116,7 +116,7 @@ Output:
 null
 ```
 
-###mesure###
+###measure###
 
 Calculate the minimum and maximum length of the strings matching regular expression
 
