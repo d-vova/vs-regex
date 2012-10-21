@@ -87,4 +87,10 @@ if ( require.main == module ) {
   }
 
   console.log( 'done' );
+
+  var r = Regex('\\1{2}-\\2?-\\3{3,4}=a(b(c)(d)e)f', 'i');
+
+  console.log( r.explain(2) );
+
+  for ( var i = 0; i < 10; i += 1 ) console.log( r.generate() );
 }
