@@ -13,13 +13,13 @@ var Regex = exports.Regex = require('./lib/Regex');
 
 exports.create = function create ( expression ) {
   return Regex(expression);
-} // done
+}
 
 exports.measure = function measure ( expression ) {
   var regex = Regex(expression);
 
   return regex instanceof Error ? regex : regex.measure();
-} // done
+}
 
 exports.generate = function generate ( expression ) {
   var regex = Regex(expression);
@@ -37,7 +37,7 @@ exports.explain = function explain ( expression ) {
   var regex = Regex(expression);
 
   return regex instanceof Error ? regex : regex.explain();
-} // done
+}
 
 if ( require.main == module ) {
   var test = {
@@ -88,7 +88,7 @@ if ( require.main == module ) {
 
   console.log( 'done' );
 
-  var r = Regex('\\1{2}-\\2?-\\3{3,4}=a(b(c)(d)e)f', 'i');
+  var r = Regex('\\1{2}-\\2?-\\3{3,4}=a(?:b(?:c)(?:d)e)f', 'i');
 
   console.log( r.explain(2) );
 
