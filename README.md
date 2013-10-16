@@ -124,7 +124,7 @@ Calculate the minimum and maximum length of the strings matching regular express
 
 Generate a random string that matches regular expression
 
-###borders###
+###borders (not implemented)###
 
 Compute a set of strings that represent corner cases for regular expression
 
